@@ -1,0 +1,28 @@
+/* Edition-scoped responsive and accessibility fixes. Baseline CSS is unchanged. */
+.edition-2027 a:focus-visible, .edition-2027 button:focus-visible { outline: 3px solid #004AAD; outline-offset: 3px; }
+.edition-2027 .banner a:focus-visible { outline-color: white; }
+.edition-2027 .skip-link { position: absolute; left: 12px; top: -80px; z-index: 10; background: white; padding: 12px; color: #004AAD; }
+.edition-2027 .skip-link:focus { top: 12px; }
+.edition-2027 .menu .dropdown:focus-within .dropdown-content { display: block; }
+.edition-2027 .menu .dropbtn span { font-size: 12px; margin-left: 5px; }
+.edition-2027 .menu .menu-button { font: inherit; color: #004AAD; background: white; border: 1px solid #004AAD; border-radius: 2px; width: auto; min-width: 60px; min-height: 44px; padding: 8px; }
+.edition-2027 .content .flex-item { min-width: 0; overflow-wrap: anywhere; }
+.edition-2027 .edition-hero p { font-size: 20px; }
+@media screen and (max-width: 1050px) {
+  .edition-2027 .menu .menu-table { padding: 0 10px; }
+  .edition-2027 .menu .menu-button { display: none; pointer-events: auto; }
+  .edition-2027.nav-ready .menu .menu-button { display: flex; align-items: center; justify-content: center; }
+  .edition-2027 .menu .menu-items { display: block; width: 100%; margin: 0 20px 10px; align-self: baseline; }
+  .edition-2027.nav-ready .menu .menu-items { display: none; }
+  .edition-2027.nav-ready .menu .menu-items.is-open { display: block; }
+  .edition-2027 .menu .menu-items > a, .edition-2027 .menu .menu-items > div { display: block; width: auto; height: auto; padding: 10px 0; margin-right: 0; }
+  .edition-2027 .menu .menu-items .dropdown { padding-bottom: 0; }
+  .edition-2027 .menu .menu-items .dropdown .dropbtn { display: block; height: auto; }
+  .edition-2027 .menu .menu-items .dropdown .dropdown-content { position: static; display: block; margin-top: 10px; background: inherit; box-shadow: none; border: 0; }
+  .edition-2027 .menu .menu-items .dropdown .dropdown-content a { padding: 12px 20px; color: rgba(0, 0, 0, 0.8); }
+}
+@media screen and (max-width: 500px) {
+  .edition-2027 .edition-hero { height: auto !important; min-height: 400px; }
+  .edition-2027 .edition-hero h1 { font-size: 26px; }
+  .edition-2027 .content-table { padding: 30px 10px; }
+}

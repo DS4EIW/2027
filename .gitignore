@@ -1,3 +1,14 @@
 .DS_Store
 __pycache__/
 *.log
+
+# Local maintainer and assistant files
+.local/
+.hermes/
+/AGENTS.md
+/CLAUDE.md
+/NOTE-ORGANIZZAZIONE.md
+
+# Local test output
+/test-results/
+/playwright-report/
